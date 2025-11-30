@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="永安順王 — 介紹、活動與信仰。溫暖舒適的社區宗教文化推廣網站（中文/EN/日本語/한국어）" />
+  <title>永安順王 — 溫暖的信仰與生活</title>
+
+  <!-- Open Graph (可依實際替換) -->
+  <meta property="og:title" content="永安順王 — 溫暖的信仰與生活" />
+  <meta property="og:description" content="了解永安順王（順王）信仰、活動與廟宇，讓身心與文化都更豐富。" />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/logo-placeholder.png" alt="永安順王 標誌" class="logo" />
+        <h1 id="site-title">永安順王</h1>
+      </div>
+
+      <nav class="main-nav" aria-label="主選單">
+        <button id="lang-toggle" class="lang-btn" aria-haspopup="true" aria-expanded="false">中文 ▾</button>
+        <ul class="nav-links">
+          <li><a href="#hero" data-key="nav_home">首頁</a></li>
+          <li><a href="#about" data-key="nav_about">關於</a></li>
+          <li><a href="#events" data-key="nav_events">活動</a></li>
+          <li><a href="#gallery" data-key="nav_gallery">畫廊</a></li>
+          <li><a href="#contact" data-key="nav_contact">聯絡</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2 id="hero-title">溫暖的傳統，當代的生活</h2>
+          <p id="hero-sub">在這裡你可以認識永安順王（順王）信仰、參與社區活動，並提升身心內涵。</p>
+          <div class="hero-cta">
+            <a href="#about" class="btn primary" data-key="cta_learn">了解更多</a>
+            <a href="#events" class="btn" data-key="cta_events">近期活動</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="assets/hero-placeholder.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="container">
+        <h3 data-key="about_title">關於永安順王</h3>
+        <p id="about-text">
+          永安順王（或稱順王）為台灣地區部分廟宇中祭祀的神尊之一，常見於名為「永安宮 / 順安宮」等廟宇，並在社區文化活動與繞境中扮演重要角色。網站旨在推廣信仰文化、介紹廟宇與活動，並分享讓身心更豐富的實踐方法（如：心靈練習、社區交流）。 
+        </p>
+        <div class="about-cards">
+          <article class="card">
+            <h4 data-key="beliefs_title">信仰與傳統</h4>
+            <p data-key="beliefs_text">介紹祭祀方式、節慶、祭典時間與禁忌等。</p>
+          </article>
+          <article class="card">
+            <h4 data-key="wellness_title">身心提升</h4>
+            <p data-key="wellness_text">結合靜坐、義工、社區活動，促進內在修養與身體健康。</p>
+          </article>
+          <article class="card">
+            <h4 data-key="visit_title">來訪資訊</h4>
+            <p data-key="visit_text">建議交通、參拜流程、照片與常見問答 (FAQ)。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENTS -->
+    <section id="events" class="section events">
+      <div class="container">
+        <h3 data-key="events_title">近期活動</h3>
+        <ul id="events-list" class="events-list">
+          <!-- 範例活動（可由管理者後台更新或手動更換） -->
+          <li class="event">
+            <h4 class="event-title">聖誕繞境 / Annual Pilgrimage</h4>
+            <time datetime="2025-02-25">農曆二月廿五</time>
+            <p class="event-desc">地方祭典、遶境與平安祈福，歡迎各界參與。</p>
+          </li>
+          <li class="event">
+            <h4 class="event-title">社區義工日</h4>
+            <time datetime="2025-03-15">2025-03-15</time>
+            <p class="event-desc">寺廟清潔、免費茶點、文化講座。</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section gallery">
+      <div class="container">
+        <h3 data-key="gallery_title">畫廊</h3>
+        <div class="gallery-grid" id="gallery-grid">
+          <!-- 圖片請放到 /assets/ 並替換檔名 -->
+          <figure><img src="assets/gallery1.jpg" alt="廟宇正殿" /></figure>
+          <figure><img src="assets/gallery2.jpg" alt="繞境隊伍" /></figure>
+          <figure><img src="assets/gallery3.jpg" alt="神尊金身" /></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h3 data-key="contact_title">聯絡我們</h3>
+        <p data-key="contact_sub">有問題、想提供歷史資料或願意成為義工？歡迎留言。</p>
+
+        <form id="contact-form" class="contact-form" onsubmit="return handleContact(event)">
+          <label>
+            <span data-key="form_name">姓名</span>
+            <input type="text" id="name" required />
+          </label>
+          <label>
+            <span data-key="form_email">電子郵件</span>
+            <input type="email" id="email" required />
+          </label>
+          <label>
+            <span data-key="form_message">留言</span>
+            <textarea id="message" rows="5" required></textarea>
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="btn primary" data-key="form_submit">送出</button>
+          </div>
+        </form>
+
+        <div class="contact-info">
+          <p><strong data-key="contact_address_label">地址：</strong><span id="contact-address">（請在此填入廟址）</span></p>
+          <p><strong data-key="contact_phone_label">電話：</strong><span id="contact-phone">（請填入聯絡電話）</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p id="footer-text">© <span id="year"></span> 永安順王，保留所有權利。</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
